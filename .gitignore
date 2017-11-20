@@ -52,10 +52,9 @@ Thumbs.db
 *.zip
 
 # Ignore the public folder
-public/
+public/*
+# but include index.html
+!public/index.html
 
 #ignore the node_modules (nodejs)
 node_modules/
-
-#include index.html
-!public/index.html
