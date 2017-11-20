@@ -1,26 +1,36 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# Using Webpack for the first time
 
+1. Clone this repository as a template
+```
+$ git clone git@github.com:alesanchezr/webpack-ready.git
+```
 
-Hi there! Welcome to Cloud9 IDE!
+Run npm install to download all the dependency libraries
+```
+$ npm install
+```
 
-To get you started, we included a small hello world application.
+Change the remote to you repository
+```
+$ git remote set-url origin <your repository url here>
+```
 
-1) Open the hello-world.html file
+You are ready to go!
 
-2) Click on the Preview button to open a live preview pane
+## How to continue?
 
-3) Make some changes to the file, save, watch the preview, and have fun!
+The application flow starts at **app.js**, you have to import any other files or assets into app in order for webpack to include them in the bundle.
 
-Happy coding!
-The Cloud9 IDE team
+For example, inside app.js you can do:
 
+```js
 
-## Support & Documentation
+    //This will include file.js into your bundle.
+    import 'js/file2';
+    
+    //this will include the styles at index.scss to your bundle.
+    require('../styles/index.scss');
 
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+```
+
+All your code must go inside the src folder, and webpack will automaticly bundle them and export them into the public folder.
