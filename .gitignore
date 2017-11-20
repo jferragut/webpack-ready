@@ -1,0 +1,61 @@
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+php_errorlog
+.log
+# track this file .gitignore (i.e. do NOT ignore it)
+!composer.json
+!webpack.config.js
+!package.json
+!webpack.production.js
+!webpack.development.js
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!README.md
+
+# ignore all files that start with ~
+~*
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore the public folder
+public/
+
+#ignore the node_modules (nodejs)
+node_modules
+
+#include index.html
+!public/index.html
