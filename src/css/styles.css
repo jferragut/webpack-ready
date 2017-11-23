@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+body {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+h1 {
+  font-size: 50px; }
+
+#containerOuter {
+  height: 100%;
+  width: 100%; }
+
+#excuseDiv {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); }
+
+#excuseDiv button, #excuseDiv h1 {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+#excuseDiv button {
+  background: transparent;
+  border: 1px solid orangered;
+  font-size: 25px;
+  color: orangered;
+  margin-top: 30px;
+  padding: 10px; }
+
+#excuseDiv button:hover {
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  color: white; }
+
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em orangered; }
+
+/*# sourceMappingURL=styles.css.map */
